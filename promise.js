@@ -25,3 +25,6 @@ promise.then(function()
     console.log("below"); 
    
    })
+
+   //
+   now trying promise waterfall
