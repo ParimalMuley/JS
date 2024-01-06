@@ -1,0 +1,29 @@
+//lets get an api first to practice
+//https://pokeapi.co/api/v2/pokemon/ditto 
+//lets try using a fetch on this to get the data of the pokemon ditto.
+ fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+.then(data=>{
+    data =data.json();
+    return data;
+})
+.then(data=>{
+    console.log(data)
+})
+//lets try if we can fetch the data similar for pikachu by changing the url somehow asnd using async await in it.
+pikachu();
+async function pikachu()
+{  try{
+    await fetch("https://pokeapi.co/api/v2/pokemon/"+"pikachu")
+.then(data=>{
+    data=data.json();
+    return data;
+})
+.then(data=>{console.log(data)})
+}
+catch(error){
+    console.log(error);
+}
+
+}
+
+
