@@ -1,0 +1,18 @@
+//lets try using map and filter functions in javascript 
+//they can be used on an array to do a particular operation on it 
+//lets first try map 
+let a = [1,2,3,4,5];
+const parimal =a.map((i)=>{
+    return i*2;
+})
+console.log(parimal);
+//the map function requires two arguments the array and the function map(arr,fun) or you can declare it as arr.map(function)
+//lets try filter for the same 
+const filt=a.filter((i)=>{
+    if(i%3==0)
+    {
+        return true;
+    }
+    else return false;
+})
+console.log(filt);
